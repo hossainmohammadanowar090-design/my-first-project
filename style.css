@@ -1,0 +1,396 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ 
+#newli li a {
+    display: block;
+    padding: 10px 15px;
+    color: #000;
+    text-decoration: none;
+    transition: transform 0.2s ease, background 0.2s ease;
+}
+#newli li a:active {
+    transform: translateX(8px); /* এখানেই slide */
+    background: black;
+    color: black;
+}
+
+ #newli li a:hover {
+    background: #ff0000;
+}
+
+ 
+ 
+ 
+#mainNav{border-bottom:4px solid red;
+         background:#e4dcdc;
+		 overflow:visible;
+		 position:relative;}
+#mainNav img:first-child{
+    width: 100%;
+    height:200px;
+    object-fit: contain;
+    display: block;
+    background: green;
+}
+		 
+ 
+body{font-family:arial;
+    font-size:25px;
+	line-height:25px;}
+
+#primarymenu{list-style:none;
+            background:black;}
+			
+#primarymenu li{float:left;
+               position: relative;}
+			   
+#primarymenu li a{color:#070707;
+                 font-weight:bold;
+                 text-decoration:none;                			
+				 padding:22px 14px;
+				}
+				 
+#primarymenu li a:hover{background:black;
+                        color:white;
+						transition:all 1s;
+						display:block;}
+						
+#primarymenu::after{
+  content:"";
+  display:block;
+  clear:both;
+}						
+						
+
+						
+						
+						
+	
+img{
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 0;
+  display: block;
+}	
+
+#Logo img{
+  width: 150px;
+}
+	
+#Logo{width:130px;
+      float:left;
+	  padding:15px 0px;
+	  text-align:center;}
+#Logosize{width:1170px;
+          margin:auto;}
+		  
+		  
+	
+ 
+
+
+/* submenu box */
+#newli.dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: black;
+    background: black;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: none;
+    min-width: 200px;
+    z-index: 999;
+}
+
+/* show submenu on hover */
+.service-menu:hover #newli{
+    display: block;
+}
+#mainNav img:first-child{
+    width: 100%;
+    height: 200px;
+    max-height: 200px;   /* চাইলে adjust করবেন */
+    object-fit: contain;
+    display: block;
+	overflow: hidden;
+    background: black; /* ফাঁকা জায়গা থাকলে সুন্দর দেখাবে */
+}
+
+
+#newli{
+    list-style: none;  
+    padding-left: 0;
+    margin: 0;
+}
+
+
+/* submenu links */
+#newli li a{
+    display: block;
+    padding: 12px 15px;
+    color: #000;
+    text-decoration: none;
+    transition: transform 0.2s ease, background 0.2s ease;
+}
+
+/* hover effect */
+#newli li a:hover{
+    background: black;
+	transform: translateX(30px);  
+    padding-left: 35px;  
+}
+
+/* click slide effect */
+#newli li a:active{
+    transform: translateX(75px);
+    background: black;
+    color: black;
+}
+
+
+a{display:block;}
+
+#primarymenu::after{clear:both;}
+img{margin-bottom:0;}
+
+
+
+
+.service-menu:hover #newli{
+    display: block;
+
+
+}
+
+
+footer{margin-top:50px;
+       
+background: black;
+       
+color: black;
+       
+padding: 30px 0px;
+        
+font-family:
+       arial;
+       
+display: table;
+       
+width: 100%;
+       }
+
+footer h2{
+         border-bottom: 1px solid #ddd;
+         font-family: arial;
+         font-weight:
+         bold;
+         font-size:20px;
+         margin-bottom: 15px;
+         padding-bottom: 14px;
+         }
+
+
+div#SubscribeForm input {
+    width: 100%;
+    padding: 18.5px;
+margin: 1px 0px;}
+    
+input#subscribebButtom {
+    background: black;
+    border: 1px solid red;
+   
+}
+
+
+
+div#footerBlock {
+    width: 244px;
+    display: inline-block;
+    margin: 0px 7px;
+    float: left;
+    overflow: hidden;
+}
+div#Subscribeform input {
+    width: 100%;
+    padding: 5px;
+margin: 5px 0;}
+
+
+
+ul#AuditionalMenu {
+    list-style: none;
+}
+
+ul#AuditionalMenu li {
+    width: 100%;
+    line-height: 36px;
+    border-bottom: 1px solid #395f5e;
+}
+ul#AuditionalMenu li:hover a{text-decoration:underline;}
+ul#AuditionalMenu li a {
+    color: #69d41b;
+    text-decoration: none;
+}
+
+ul#CustomLink {
+    list-style: none;
+}
+
+ul#CustomLink li {
+    width: 100%;
+    line-height: 36px;
+    border-bottom: 1px solid #395f5e;
+	
+}
+
+ul#CustomLink li:last-child{border:none;}
+ul#CustomLink li:hover a{text-decoration:underline;}
+
+ul#CustomLink li a {
+    color: #69d41b;
+text-decoration: none;}
+
+
+
+
+#footer{
+  background:#000;
+  color:#aab3b4;
+  padding:50px 0;
+}
+
+.footer-container{
+  width:1170px;
+  margin:auto;
+  display:flex;
+  justify-content:space-between;
+  gap:30px;
+}
+
+.footer-box{
+  width:25%;
+}
+
+.footer-box h2{
+  color:#fff;
+  font-size:20px;
+  border-bottom:1px solid #444;
+  padding-bottom:10px;
+  margin-bottom:15px;
+}
+
+.footer-box p{
+  font-size:14px;
+  line-height:22px;
+}
+
+.footer-box ul{
+  list-style:none;
+  padding:0;
+}
+
+.footer-box ul li{
+  border-bottom:1px solid #333;
+}
+
+.footer-box ul li a{
+  color:#69d41b;
+  text-decoration:none;
+  display:block;
+  padding:6px 0;
+}
+
+.footer-box ul li a:hover{
+  text-decoration:underline;
+}
+
+/* Subscribe */
+.footer-box input{
+  width:100%;
+  padding:10px;
+  margin-bottom:10px;
+  border:none;
+}
+
+.footer-box button{
+  width:100%;
+  padding:10px;
+  background:#41d1ce;
+  border:none;
+  cursor:pointer;
+  font-weight:bold;
+}
+
+
+#footer{
+  background:#000;
+  color:#aab3b4;
+  padding:50px 0;
+}
+
+.footer-container{
+  width:1170px;
+  margin:auto;
+  display:flex;
+  justify-content:space-between;
+  gap:30px;
+}
+
+.footer-box{
+  width:25%;
+}
+
+.footer-box h2{
+  color:#fff;
+  font-size:20px;
+  border-bottom:1px solid #444;
+  padding-bottom:10px;
+  margin-bottom:15px;
+}
+
+.footer-box p{
+  font-size:14px;
+  line-height:22px;
+}
+
+.footer-box ul{
+  list-style:none;
+  padding:0;
+}
+
+.footer-box ul li{
+  border-bottom:1px solid #333;
+}
+
+.footer-box ul li a{
+  color:#69d41b;
+  text-decoration:none;
+  display:block;
+  padding:6px 0;
+}
+
+.footer-box ul li a:hover{
+  text-decoration:underline;
+}
+
+/* Subscribe */
+.footer-box input{
+  width:100%;
+  padding:10px;
+  margin-bottom:10px;
+  border:none;
+}
+
+.footer-box button{
+  width:100%;
+  padding:10px;
+  background:#41d1ce;
+  border:none;
+  cursor:pointer;
+  font-weight:bold;
+}
